@@ -45,6 +45,6 @@ Can you look at this and find the bug?  Then, try to find ways to improve it?
 
 Some notes:
 
-- the "(1..100)" is a range (http://ruby-doc.org/core-2.1.5/Range.html), just a short way of listing all the numbers from 1 to 100.
+- The `(1..100)` is [a range](http://ruby-doc.org/core-2.1.5/Range.html), just a short way of listing all the numbers from 1 to 100.
 
-- the 'number % <whatever> == 0' is finding the [modulus](http://en.wikipedia.org/wiki/Modulo_operation), just the remainder of dividing one number into another. For example, '11%3' would return 2. By checking if the result of this operation equals 0, we see if a given number is a multiple of 3 or 5. This use of '%' is pretty common in a number of programming languages, and in Ruby it can also be written as '11.modulo(3)'
+- The `number % <whatever> == 0` is finding the [modulus](http://en.wikipedia.org/wiki/Modulo_operation), just the remainder of dividing one number into another. For example, `11%3` would return 2. By checking if the result of this operation equals 0, we see if a given number is a multiple of 3 or 5. This use of `%` is pretty common in a number of programming languages, and in Ruby it can also be written as `11.modulo(3)`.
