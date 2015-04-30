@@ -21,7 +21,7 @@ There are various "fun" ways to use different language tricks to solve this, but
 
 
 ```ruby
-def fizzbuzzer(number)
+def fizzbuzz(number)
   if number %3 == 0 && number %5 == 0
     puts "FizzBuzz"
   elsif number %3==0
@@ -34,7 +34,7 @@ def fizzbuzzer(number)
 end
 
 progression = (1..100)
-progression.each{|num| fizzbuzzer(num)}
+progression.each{|num| fizzbuzz(num)}
 ```
 
 There are many ways to improve on this (and even more just fun ways to do it, even if they aren't "improved").
