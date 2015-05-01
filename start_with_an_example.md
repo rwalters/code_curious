@@ -2,6 +2,10 @@
 
 There is a rather common "how do you think" interview question (that isn't actually used that much anymore) called FizzBuzz:
 
+## Instructions
+
+This is a simple example, but all "tech documents" and "use cases" boil down to a series of instructions. Programmers get to translate those human readable instructions into computer readable code.
+
 ```text
 For numbers 1 through 100,
 
@@ -11,8 +15,9 @@ If the number is divisible by 3 and 5 (15) print FizzBuzz;
 Else, print the number.
 ```
 
-There are various "fun" ways to use different language tricks to solve this, but one simple way is to pretty literally translate this to ruby:
+There are various "fun" ways to use different language tricks to solve this, but one simple way is to pretty literally translate this to ruby.
 
+## One Simple Implementation
 
 ```ruby
 def fizzbuzz(number)
@@ -35,9 +40,11 @@ There are many ways to improve on this (and even more just fun ways to do it, ev
 
 Also, there is a bug.
 
+### A Bug?
+
 Can you look at this and find the bug?  Then, try to find ways to improve it?
 
-Some notes:
+## Some Notes
 
 - The `(1..100)` is [a range](http://ruby-doc.org/core-2.1.5/Range.html), just a short way of listing all the numbers from 1 to 100.
 
