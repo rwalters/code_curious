@@ -32,16 +32,44 @@ describe CalcArea do
   end
 
   context "#circle" do
-    xit do
+    it do
       expect(calc.circle(2)).to eq 12.56
     end
 
-    xit do
+    it do
       expect(calc.circle(3)).to eq 28.26
     end
 
-    xit do
+    it do
       expect(calc.circle(12)).to eq 452.16
+    end
+  end
+
+  context "#triangle" do
+    it do
+      expect(calc.triangle(2, 4)).to eq 4
+    end
+
+    it do
+      expect(calc.triangle(3, 8)).to eq 12
+    end
+
+    it do
+      expect(calc.triangle(6, 14)).to eq 42
+    end
+  end
+
+  context "#hexagon" do
+    it do
+      expect(calc.hexagon(3)).to eq 23.38
+    end
+
+    it do
+      expect(calc.hexagon(8)).to eq 166.28
+    end
+
+    it do
+      expect(calc.hexagon(14)).to eq 509.22
     end
   end
 end
