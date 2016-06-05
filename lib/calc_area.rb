@@ -8,7 +8,7 @@ class CalcArea
   end
 
   def square(side)
-    rectangle(side, side)
+    calculator.square(side)
   end
 
   def circle(radius)
@@ -20,9 +20,12 @@ class CalcArea
   end
 
   def hexagon(side)
-    answer = 3 * Math.sqrt(3)
-    answer = answer/2
-    answer = answer * square(side)
+    to_be_multiplied = [3]
+    to_be_multiplied << calculator.sqrt(3)
+    to_be_multiplied << calculator.square(side)
+
+    answer = calculator.multiply( *to_be_multiplied )
+    answer = calculator.divide(answer, 2)
     answer.round(2)
   end
 
